@@ -94,7 +94,7 @@ export const inject = (plugins: [any],options: Options) => {
         if (!options.renderNodeFunctions){
             options.renderNodeFunctions = [fn];
         } else {
-            options.renderNodeFunctions[options.renderNodeFunctions.length] = fn // NOTE: options.renderNodeFunctions.length+1 ???
+          options.renderNodeFunctions[options.renderNodeFunctions.length+1] = fn // NOTE: options.renderNodeFunctions.length+1 ???
         }
     }
 

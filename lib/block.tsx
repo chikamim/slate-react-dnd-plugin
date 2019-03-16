@@ -73,8 +73,7 @@ export const dragTarget = {
       }
 
       const dragIndex = getIndex(props.editor.state.value.document.nodes._tail.array, item.key);
-
-      const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
+      const hoverBoundingRect = (findDOMNode(component) as Element).getBoundingClientRect();
       const clientOffset = monitor.getClientOffset();
       const middle = hoverBoundingRect.bottom - hoverBoundingRect.height / 2;
       const mouseY = clientOffset.y;
